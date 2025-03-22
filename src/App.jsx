@@ -83,9 +83,9 @@ function App() {
   return (
     <div id="app-container" className="clock-container">
       <h1>25 + 5 Clock</h1>
-
       {/* Break Section */}
-      <div id="break-label">Break Length</div>
+      <div id="break-label"></div>
+      Break Length
       <button id="break-decrement" onClick={handleBreakDecrement}>
         -
       </button>
@@ -93,7 +93,6 @@ function App() {
       <button id="break-increment" onClick={handleBreakIncrement}>
         +
       </button>
-
       {/* Session Section */}
       <div id="session-label">Session Length</div>
       <button id="session-decrement" onClick={handleSessionDecrement}>
@@ -103,11 +102,9 @@ function App() {
       <button id="session-increment" onClick={handleSessionIncrement}>
         +
       </button>
-
       {/* Timer Section */}
       <div id="timer-label">{isSession ? "Session" : "Break"}</div>
       <div id="time-left">{formatTime(timeLeft)}</div>
-
       {/* Controls */}
       <button id="start_stop" onClick={handleStartStop}>
         {isTimerRunning ? "Pause" : "Start"}
@@ -115,7 +112,6 @@ function App() {
       <button id="reset" onClick={handleReset}>
         Reset
       </button>
-
       {/* Beep Sound */}
       <audio
         id="beep"
