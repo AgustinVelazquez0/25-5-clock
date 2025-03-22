@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   justify-content: center;
+  background-color: #3e4a59;
 }
 
 /* Contenedor principal */
@@ -13,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f4f8; /* Color de fondo suave */
+  background-color: #162535;
   color: #333;
   padding: 20px;
 }
@@ -21,7 +22,7 @@ body {
 /* Título principal */
 h1 {
   font-size: 2.5rem;
-  color: #3e4a59;
+  color: #f9fafc;
   margin-bottom: 30px;
   font-weight: 700;
   text-align: center;
