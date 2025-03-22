@@ -1,9 +1,11 @@
+/* Reset general */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   justify-content: center;
   background-color: #3e4a59;
+  height: 100%;
 }
 
 /* Contenedor principal */
@@ -15,32 +17,35 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #162535;
-  color: #333;
-  padding: 20px;
+  color: #f8f3f3;
+  padding: 3px 10px;
+  overflow: hidden; /* Evita scroll en la página */
+  width: 400px;
 }
 
 /* Título principal */
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem; /* Reducido el tamaño del título */
   color: #f9fafc;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Reducido el espacio debajo del título */
   font-weight: 700;
   text-align: center;
+  margin: 0 0 20px 0;
 }
 
 /* Sección de Break y Session */
 #break-label,
 #session-label {
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Reducido tamaño de texto */
   margin-bottom: 5px;
-  color: #4a4a4a;
+  color: #f0ebeb;
 }
 
 #break-length,
 #session-length {
-  font-size: 2rem;
+  font-size: 1.8rem; /* Reducido tamaño de texto */
   font-weight: bold;
-  color: #2d2d2d;
+  color: #eee7e7;
 }
 
 /* Botones de incremento y decremento */
@@ -48,8 +53,8 @@ button {
   background-color: #007bff;
   color: white;
   border: none;
-  font-size: 1.5rem;
-  padding: 10px 20px;
+  font-size: 1.4rem; /* Reducido tamaño de texto */
+  padding: 8px 18px; /* Reducido el padding */
   margin: 5px;
   cursor: pointer;
   border-radius: 8px;
@@ -67,7 +72,7 @@ button:active {
 
 /* Contenedor del temporizador */
 #timer-label {
-  font-size: 1.5rem;
+  font-size: 1.4rem; /* Reducido tamaño de texto */
   margin-top: 20px;
   color: #007bff;
   font-weight: 600;
@@ -75,17 +80,17 @@ button:active {
 
 /* Formato del tiempo */
 #time-left {
-  font-size: 4rem;
+  font-size: 3.5rem; /* Reducido tamaño del texto */
   font-weight: 700;
   color: #333;
   margin-top: 20px;
   background-color: #fff;
-  padding: 20px;
+  padding: 15px; /* Reducido padding */
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  width: 180px;
+  width: 160px; /* Reducido el ancho */
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Reducido margen inferior */
 }
 
 /* Contenedor de los controles */
@@ -93,7 +98,7 @@ button#start_stop,
 button#reset {
   font-size: 1.2rem;
   width: 150px;
-  padding: 15px;
+  padding: 12px;
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -122,13 +127,13 @@ button#reset:hover {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   #time-left {
-    font-size: 3rem;
-    width: 150px;
-    padding: 15px;
+    font-size: 3rem; /* Reducido tamaño del tiempo */
+    width: 140px; /* Reducido el ancho */
+    padding: 12px;
   }
 
   button {
